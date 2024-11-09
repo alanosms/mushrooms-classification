@@ -1,21 +1,18 @@
-# Classificação de Cogumelos: Comestíveis ou Venenosos
+# Mushroom Classification: Edible or Poisonous
+This project uses mushroom data to predict whether a species is edible (E) or poisonous (P) based on its characteristics. We use a decision tree classifier to make predictions.
 
-Este projeto utiliza dados de cogumelos para prever se uma espécie é comestível (E) ou venenosa (P) com base em suas características. Usamos um classificador de árvore de decisão para realizar as previsões.
+## Project Description
+The dataset contains information about various mushroom characteristics, such as cap shape, surface, and color, bruising presence, odor, among others. The target variable is the mushroom class, which indicates whether it is edible (E) or poisonous (P).
 
-## Descrição do Projeto
+## Project Structure
+- **Library Imports**: We use `pandas`, `numpy`, `seaborn`, `matplotlib`, and `plotly.express` for data manipulation and visualization, and `scikit-learn` for machine learning modeling.
+- **Data Loading and Verification**: The dataset is loaded from a CSV file and verified to ensure data integrity.
+- **Exploratory Data Analysis (EDA)**: Visualizations, such as bar charts for class distribution, are generated.
+- **Data Preprocessing**: Conversion of categorical variables into dummy variables and separation of the target variable.
+- **Data Split**: The dataset is divided into training and test subsets.
+- **Model Training**: A decision tree classifier is trained with the training set.
+- **Decision Tree Visualization**: The trained decision tree is visualized.
+- **Predictions and Evaluation**: The model makes predictions on the test set and results are compared with actual values.
 
-O dataset utilizado contém informações sobre várias características dos cogumelos, como formato, superfície e cor do chapéu, presença de hematomas, odor, entre outros. A variável alvo é a classe do cogumelo, que indica se ele é comestível (E) ou venenoso (P).
-
-## Estrutura do Projeto
-
-- **Importação de Bibliotecas**: Usamos `pandas`, `numpy`, `seaborn`, `matplotlib` e `plotly.express` para manipulação e visualização de dados, e `scikit-learn` para modelagem de machine learning.
-- **Carregamento e Verificação dos Dados**: O dataset é carregado de um arquivo CSV e verificado para assegurar a integridade dos dados.
-- **Análise Exploratória de Dados (EDA)**: Visualizações, como o gráfico de barras para a distribuição das classes, são geradas.
-- **Pré-Processamento dos Dados**: Conversão das variáveis categóricas em variáveis dummy e separação da variável alvo.
-- **Divisão dos Dados**: O conjunto de dados é dividido em subconjuntos de treinamento e teste.
-- **Treinamento do Modelo**: Um classificador de árvore de decisão é treinado com o conjunto de treinamento.
-- **Visualização da Árvore de Decisão**: A árvore de decisão treinada é visualizada.
-- **Previsões e Avaliação**: O modelo faz previsões no conjunto de teste e os resultados são comparados com os valores reais.
-
-## Utilização do Dataset
-O dataset usado neste projeto pode ser encontrado [aqui](https://www.kaggle.com/datasets/devzohaib/mushroom-edibility-classification).
+## Dataset Usage
+The dataset used in this project can be found [here](https://www.kaggle.com/datasets/devzohaib/mushroom-edibility-classification).
